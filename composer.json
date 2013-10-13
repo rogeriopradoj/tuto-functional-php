@@ -1,0 +1,21 @@
+{
+    "name": "rogeriopradoj/tuto-functional-php",
+    "description": "Following the tutorial from Patkos Csaba on NetTuts+, http://net.tutsplus.com/tutorials/php/functional-programming-in-php/",
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "RogerioPradoJ\\TutoFunctionalPHP": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rogerio Prado de Jesus",
+            "email": "rogeriopradoj@gmail.com"
+        }
+    ]
+}
