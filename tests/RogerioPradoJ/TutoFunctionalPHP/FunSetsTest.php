@@ -19,4 +19,12 @@ class FunSetsTest extends \PHPUnit_Framework_TestCase
         };
         $this->assertTrue($this->funSets->contains($set, 100));
     }
+
+    public function testSingletonSetContainsSingleElement()
+    {
+        // A singleton set is characterize by a function which passed to contains will return true for the single
+        // element passed as its parameter. In other words, a singleton is a set with a single element.
+        $singleton = $this->funSets->singletonSet(1);
+        $this->assertTrue($this->funSets->contains($singleton, 1));
+    }
 }

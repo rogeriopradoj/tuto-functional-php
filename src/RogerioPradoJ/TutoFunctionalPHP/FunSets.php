@@ -7,4 +7,11 @@ class FunSets
     {
         return $set($elem);
     }
+
+    public function singletonSet($elem)
+    {
+        return function ($otherElem) use ($elem) {
+            return $elem === $otherElem;
+        };
+    }
 }
